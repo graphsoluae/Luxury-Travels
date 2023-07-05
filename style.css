@@ -1,0 +1,309 @@
+body {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    /* background: rgba(159, 164, 196, .25); */
+    background: #000D46;
+    color: #946e38;
+
+
+    /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 400% 400%;
+        animation: gradient 15s ease infinite; */
+    
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+h3 {
+    font-size: 17px;
+    color: #000;
+}
+
+button{
+    margin-top: 20px;
+    width: 300px;
+}
+.main-block {
+    margin-top: 60px;
+    
+}
+.shade-background{
+    /* background: rgba(159, 164, 196, .25); */
+    background: #fff;
+    margin:0px 15px;
+    border-radius: 15px;
+    padding: 30px 0px;
+}
+/* .contact-me{
+    background: #15d798;
+        border-radius: 11px;
+        padding: 20px 45px;
+        color: #ffffff;
+        border-color: #ffffff;
+        display: inline-block;
+        font: normal bold 26px/1 "Open Sans", sans-serif;
+        text-align: center;
+} */
+.icon {
+    margin-right: 10px;
+
+}
+.web-link{
+    text-decoration: none;
+    color: black;
+}
+
+
+.logo-container{
+    background-color: white;
+    border-radius: 25px;
+    width: 400px;
+    margin: auto;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+/* container animations */
+
+.glow-on-hover {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, rgba(239, 51, 64, .4), rgba(0, 151, 57, .4), #FFFFFF, rgba(0, 151, 57, .4), rgba(0, 0, 0, .2));
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+
+
+/* buttons animations */
+
+.glow-on-hover-button {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover-button:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover-button:active {
+    color: #000
+}
+
+.glow-on-hover-button:active:after {
+    background: transparent;
+}
+
+.glow-on-hover-button:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover-button:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+
+
+
+@media only screen and (min-width: 400px) and (max-width:500px){
+    .logo-container {
+            width: 82%;
+    }
+    .logo-image{
+        width: 80%;
+        height: 100px;
+    }
+    .name-text{
+        font-size: 26px;
+    }
+    
+
+}
+@media only screen and (min-width: 350px) and (max-width:399px){
+    .logo-container {
+            width: 82%;
+    }
+    .logo-image{
+        width: 80%;
+        height: 80px;
+    }
+    .name-text{
+        font-size: 26px;
+    }
+    
+
+}
+@media only screen and (max-width:349px){
+    .logo-container {
+            width: 82%;
+    }
+    .logo-image{
+        width: 80%;
+        height: 70px;
+    }
+    .name-text{
+        font-size: 20px;
+    }
+    .position-text{
+        font-size: 12px;
+    }
+
+}
+
+
+/* download Section */
+
+.download-section{
+    display: flex;
+    color: black;
+    padding-bottom: 0px;
+    background: linear-gradient(270deg,rgba(33, 32, 31,.5) 0%,#946e38
+    20.343056921228012%,#fff 20.343056921228012%,#fff 100%);
+    width: 220px;
+    height: 40px;
+    margin: 15px auto 0px auto;
+    border-radius: 5px;
+    border: .5px solid #444444;
+
+
+}
+
+.download-section:hover{
+    background: rgb(125, 216, 125);
+    color: white;
+    cursor: pointer;
+}
+
+.download-btn{
+    margin: auto 0px auto 30px;
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 25px;
+}
+
+span{
+    margin: 8px 0px 0px 15px;
+}
+.download-image{
+    margin-top: 6px;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+    margin-top: 10px;
+}
